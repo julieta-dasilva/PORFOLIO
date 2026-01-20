@@ -1,0 +1,99 @@
+
+:root {
+  --violeta: #7d7ddd;
+  --blanco: #ffffff;
+  --violeta-claro: #9e9ed8;
+   scroll-behavior: smooth;
+   scroll-padding-top: 80px;
+}
+
+
+
+
+.rubik{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  
+  /* Gradiente más notorio: va desde el blanco puro hasta tu violeta principal */
+  /* El ángulo de 180deg lo hace de arriba hacia abajo, muy prolijo */
+  background: linear-gradient(180deg, 
+              var(--blanco) 0%, 
+              var(--violeta-claro) 50%, 
+              var(--violeta) 100%);
+  
+  /* Esto es clave para que el gradiente no se corte si la página es larga */
+  background-attachment: fixed;
+
+}
+
+
+header{
+   background-color: var(--violeta-claro);
+}
+
+ul {
+   list-style: none;
+   
+}
+
+a{
+   align-items: center;
+   text-decoration: none;
+   color: var(--violeta);
+
+}
+a:hover{
+   background-color: var(--violeta);
+   color:var(--blanco) ;
+}
+
+#conocimientos{
+   background-color: transparent;
+  
+}
+
+.btn-light {
+   --bs-btn-color:var(--violeta);
+   --bs-btn-hover-bg:var(--fondogeneral);
+   --bs-btn-hover-color: --blanco;
+   border: none;
+}
+
+
+.btn:hover {
+   color: var(--blanco);
+}
+
+footer{
+   background-color: var(--violeta-claro);
+}
+.brodeado{
+   border: solid 1px var(--violeta);
+}
+.list-group-item {
+   background-color:transparent;
+   border: solid 3px var(--violeta);
+   
+}
+
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: #0c0c0c !important;
+}
+
+
+
